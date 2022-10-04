@@ -1,3 +1,6 @@
 [submodule "simple-tensorflow-classifier"]
 	path = simple-tensorflow-classifier
 	url = https://github.com/trainML/simple-tensorflow-classifier.git
+[submodule "simple-classifier-endpoint"]
+	path = simple-classifier-endpoint
+	url = https://github.com/trainML/simple-classifier-endpoint.git

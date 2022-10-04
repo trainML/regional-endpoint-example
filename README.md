@@ -18,7 +18,7 @@ Before beginning this example, ensure that you have satisfied the following prer
 To create the endpoint, run the following command from a python virtual environment with the [trainML CLI/SDK](https://github.com/trainML/trainml-cli) installed and [configured](https://docs.trainml.ai/reference/cli-sdk#authentication)
 
 ```
-python create_endpoint.py RESERVATION_ID
+python create_endpoint.py RESERVATION_ID PORT
 ```
 
-where `RESERVATION_ID` is the ID of the regional port reservation that the endpoint will listen on.
+where `RESERVATION_ID` is the ID of the regional port reservation that the endpoint will listen on and `PORT` is the port number of the port reservation.
