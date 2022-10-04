@@ -47,8 +47,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     trainml = TrainML()
     job = asyncio.run(create_endpoint(trainml, args.reservation_id, args.port))
-    asyncio.run(job.wait_for("waiting for data/model download"))
-    asyncio.run(job.connect())
     asyncio.run(job.wait_for("running"))
-    asyncio.run(job.disconnect())
     print("Job ID: ", job.id, " Running")
