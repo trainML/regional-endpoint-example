@@ -30,13 +30,9 @@ async def create_endpoint(trainml, reservation_id, port):
         endpoint=dict(
             start_command="./start_endpoint.sh", reservation_id=reservation_id
         ),
-        # model=dict(
-        #     source_type="git",
-        #     source_uri="git@github.com:trainML/regional-endpoint-example.git",
-        # ),
         model=dict(
-            source_type="local",
-            source_uri="~/Documents/trainML/regional-endpoint-example",
+            source_type="git",
+            source_uri="https://github.com/trainML/regional-endpoint-example",
         ),
         environment=dict(
             type="DEEPLEARNING_PY39",
