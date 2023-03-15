@@ -8,11 +8,11 @@ http {
     index    index.html;
 
     upstream api {
-        server 127.0.0.1:80;
+        server 127.0.0.1:8080;
     }
 
     server {
-        listen ${PORT};
+        listen 80;
 
         location / {
             root ${TRAINML_MODEL_PATH}/webroot;
